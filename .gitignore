@@ -3,3 +3,5 @@
 *.lock
 .vscode/
 .pytest_cahce/
+
+.env
