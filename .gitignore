@@ -7,3 +7,5 @@
 .env
 
 database.db
+
+.coverage

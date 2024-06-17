@@ -18,13 +18,16 @@ taskipy = "^1.12.2"
 pytest = "^8.1.1"
 pytest-cov = "^5.0.0"
 httpx = "^0.27.0"
+faker = "^25.8.0"
 
 [tool.taskipy.tasks]
 dev = "fastapi dev crud_fastapi/main.py"
 prod = "fastapi run crud_fastapi/main.py"
+test = "pytest --cov=crud_fastapi tests/"
 
 [tool.pytest.ini_options]
 pythonpath = "."
+addopts = "--cov=crud_fastapi --cov-report html"
 
 [build-system]
 requires = ["poetry-core"]

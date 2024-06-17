@@ -62,7 +62,7 @@ def get_user_by_id(id: int):
 
 @app.patch(
     '/users/{id}',
-    response_model=User,
+    response_model=UserView,
     response_model_by_alias=False
 )
 def update_user_by_id(id: int, user_data: UserUpdate):
