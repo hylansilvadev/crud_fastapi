@@ -6,3 +6,5 @@
 .env
 .coverage
 db.sqlite
+database.db
+*.db
